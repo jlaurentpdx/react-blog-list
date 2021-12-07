@@ -8,12 +8,12 @@ Use the async/await pattern to make our asychronous code easier to read
 
 Use Supabase to rerieve a list of blogs from an existing database
 
-- [ ] User should see a list of blog posts when the load the page
-- [ ] App component should have a state variable called `blogs` that defaults to an empty array
-- [ ] App component should use a useEffect hook to call `getBlogs` from the services layer asynchronously and then set the returned data in state
-- [ ] There should be a function called `getBlogs` in the services layer which calls Supabase and returns all the columns from the `blogs` table
-- [ ] App component should map through each item in `blogs` and create a `<BlogCard>` component for each blog item
-- [ ] All existing Snapshot tests should pass without needing to update the snapshot
+- [x] User should see a list of blog posts when the load the page
+- [x] App component should have a state variable called `blogs` that defaults to an empty array
+- [x] App component should use a useEffect hook to call `getBlogs` from the services layer asynchronously and then set the returned data in state
+- [x] There should be a function called `getBlogs` in the services layer which calls Supabase and returns all the columns from the `blogs` table
+- [x] App component should map through each item in `blogs` and create a `<BlogCard>` component for each blog item
+- [x] All existing Snapshot tests should pass without needing to update the snapshot
 
 ## Hookup Supabase
 
@@ -25,4 +25,4 @@ Use Supabase to rerieve a list of blogs from an existing database
 - [x] Create `blogs` state using `useState`
 - [x] Use `useEffect` to call `getBlogs` when the page initially renders
 - [x] Set the response from `getBlogs` as the `blogs` state
-- [ ] `console.log` to make sure this is all working
+- [x] `console.log` to make sure this is all working
